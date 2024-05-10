@@ -42,6 +42,12 @@ function Navbar() {
           <li className="mr-5 hover:text-hover cursor-pointer">
             <Link to="/contact">Contact</Link>
           </li>
+          <li className="mr-5 hover:text-hover cursor-pointer">
+            <Link to="/cards">Cards</Link>
+          </li>
+          <li className="mr-5 hover:text-hover cursor-pointer">
+            <Link to="/detail">Detail</Link>
+          </li>
         </ul>
         <section className="flex item-center gap-4 mt-4 sm:mt-0">
           <Link to="/logout/">

@@ -9,6 +9,8 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
 import RequireAuth from "./components/RequireAuth";
+import BlogCards from "./components/BlogCards";
+import DetailPage from "./components/DetailPage";
 
 function App() {
   const { mode, token } = useGlobalContext();
@@ -32,6 +34,8 @@ function App() {
               <Route exact path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/logout" element={<Logout />} />
+              <Route path="/cards" element={<BlogCards />} />
+              <Route path="/detail" element={<DetailPage />} />
             </Route>
           </Routes>
         </BrowserRouter>

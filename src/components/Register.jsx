@@ -1,16 +1,42 @@
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z.object({
+  first_name: z.string().min(3),
+  last_name: z.string().min(3),
+  username: z.string().min(3),
+  email: z.string().email(),
+  password1: z.string().min(8),
+  password2: z.string(6).min(8),
+});
 
 function Register() {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm({
+    defaultValues: {
+      first_name: "",
+      last_name: "",
+      username: "",
+      email: "",
+    },
+    resolver: zodResolver(schema),
+  });
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     console.log(data);
+    try {
+      const response = await axios.post("/", data);
+      console.log(response);
+    } catch (error) {
+      setError("root");
+    }
   };
 
   return (
@@ -19,6 +45,10 @@ function Register() {
         <h1 className=" text-center text-4xl uppercase mb-4">
           Registration Form
         </h1>
+
+        {errors.root && (
+          <p className=" text-red-600 mt-2">{errors.root.message}</p>
+        )}
 
         <section className="">
           <label htmlFor="first_name">First Name</label>
@@ -75,6 +105,12 @@ function Register() {
             name="email"
             {...register("email", {
               required: "The email field is required",
+              // validate:(value)=>{
+              //   if(!value.includes("@")){
+              //     return 'Email must include a @'
+              //   }
+              //   return true
+              // },
               pattern: {
                 value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                 message: "The email should be a valid email",
@@ -128,9 +164,10 @@ function Register() {
         </section>
         <button
           type="submit"
+          disabled={isSubmitting}
           className="bg-button text-white w-full rounded p-2 mt-2"
         >
-          Register
+          {isSubmitting ? "submiting data ..." : "Register"}
         </button>
         <section className="mt-2">
           <span className=" mr-2">Already has an account?</span>
