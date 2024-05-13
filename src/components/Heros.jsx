@@ -1,3 +1,5 @@
+import Forms from "./Forms";
+
 function Heros() {
   return (
     <>
@@ -84,6 +86,7 @@ function Heros() {
           </div>
         </div>
       </div>
+      <Forms />
     </>
   );
 }

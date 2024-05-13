@@ -1,31 +1,18 @@
-import { useNavigate, Link } from "react-router-dom";
-import useGlobalContext from "../hooks/useGlobalContext";
-import { useState } from "react";
 import Google from "./Google";
 import Facebook from "./Facebook";
+import { useState } from "react";
 
-function Login() {
-  const { setToken } = useGlobalContext();
-  const navigate = useNavigate();
+const Forms = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleShowPassword = () => {
     setShowPassword(!showPassword);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const date = new Date();
-    const new_token = `${date.getDate()}${date.getHours()}${date.getMinutes()}${date.getFullYear()}${date.getUTCDate()}`;
-    console.log(new_token);
-    localStorage.setItem("token", new_token);
-    setToken(new_token);
-    navigate("/");
-  };
   return (
     <section className="h-full">
       {/* <!-------------------------------------------------------------------------------> */}
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6  py-6 lg:px-8 ">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-8 lg:px-8 shadow-2xl">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
@@ -38,13 +25,8 @@ function Login() {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm md:max-w-lg ">
-          <form
-            className="space-y-6 md:px-8"
-            action="#"
-            method="POST"
-            onSubmit={handleSubmit}
-          >
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <form className="space-y-6" action="#" method="POST">
             <div>
               {/* text-gray-900 */}
               <label
@@ -87,15 +69,25 @@ function Login() {
                 />
               </div>
             </div>
-            <div className="text-sm flex items-center">
-              <input
-                type="checkbox"
-                name="show_password"
-                id="show_password"
-                onClick={handleShowPassword}
-              />
-              <span className="ml-2">show password</span>
-            </div>
+            <section className="flex items-center justify-between">
+              <div className="text-sm flex items-center">
+                <input
+                  type="checkbox"
+                  name="show_password"
+                  id="show_password"
+                  onClick={handleShowPassword}
+                />
+                <span className="ml-2">show password</span>
+              </div>
+              <div className="text-sm">
+                <a
+                  href="#"
+                  className="font-semibold text-indigo-600 hover:text-indigo-500"
+                >
+                  Forgot password?
+                </a>
+              </div>
+            </section>
 
             <div>
               <button
@@ -108,38 +100,47 @@ function Login() {
           </form>
           {/* text-gray-500 */}
           <section className="flex items-center justify-center text-content gap-2 w-full my-5">
-            <hr className=" w-28 md:36" />
+            <hr className=" w-28" />
             <p className=" text-sm">Or continue with </p>
-            <hr className=" w-28 md:w-36" />
+            <hr className=" w-28" />
           </section>
-          <section className="flex items-center gap-4 w-full md:px-8">
+          <section className="flex items-center gap-4 w-full">
             <Google />
             <Facebook />
           </section>
-          <section className="flex items-center text-sm mt-10 justify-between md:px-8">
-            <section className="flex items-center">
-              <span>Dont have an account? </span>
-              <Link
-                to="/register/"
-                className="font-semibold text-indigo-600 hover:text-indigo-500 ml-1"
-              >
-                Register
-              </Link>
-            </section>
-
-            <div className="text-sm">
-              <a
-                href="#"
-                className="font-semibold text-indigo-600 hover:text-indigo-500"
-              >
-                Forgot password
-              </a>
-            </div>
-          </section>
         </div>
       </div>
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
+      {/* <!-------------------------------------------------------------------------------> */}
     </section>
   );
-}
+};
 
-export default Login;
+export default Forms;
+
+/*
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+*/
