@@ -34,6 +34,9 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li className="mr-5 hover:text-hover cursor-pointer">
+            <Link to="/heros">Heros</Link>
+          </li>
+          <li className="mr-5 hover:text-hover cursor-pointer">
             <Link to="/about"> About</Link>
           </li>
           <li className="mr-5 hover:text-hover cursor-pointer">
@@ -52,7 +55,7 @@ function Navbar() {
         <section className="flex item-center gap-4 mt-4 sm:mt-0">
           <Link to="/logout/">
             <button
-              className=" ring-1  rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200  hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right"
+              className=" ring-1  rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200  hover:text-muted hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right"
               type="button"
             >
               Logout

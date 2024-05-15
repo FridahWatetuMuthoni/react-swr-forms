@@ -1,0 +1,46 @@
+{
+  "todos": [
+    {
+      "checked": true,
+      "title": "Go running",
+      "description": "i want to go running along thika long",
+      "id": 1
+    },
+    {
+      "checked": true,
+      "title": "Do some programming",
+      "description": "i want to run data structures and algorithms",
+      "id": 2
+    },
+    {
+      "checked": true,
+      "title": "cook some food",
+      "description": "i am going to cook some chicken with rice",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "designer bag",
+      "price": 50.99,
+      "category": "bag",
+      "inventory": 4,
+      "imageURL": "http://placehold",
+      "description": "This is a designer bag",
+      "rating": 4.8,
+      "reviewCount": 76
+    },
+    {
+      "id": 2,
+      "name": " non stick cooking pots",
+      "price": 99.99,
+      "category": "pots",
+      "inventory": 14,
+      "imageURL": "http://placehold",
+      "description": "The nonstick cooking pots are safe and durable",
+      "rating": 4.2,
+      "reviewCount": 100
+    }
+  ]
+}

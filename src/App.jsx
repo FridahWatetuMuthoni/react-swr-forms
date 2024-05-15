@@ -12,6 +12,8 @@ import Logout from "./components/Logout";
 import RequireAuth from "./components/RequireAuth";
 import BlogCards from "./components/BlogCards";
 import DetailPage from "./components/DetailPage";
+import HomePage from "./react-query-funcs/HomePage";
+import ProductDetail from "./react-query-funcs/ProductDetail";
 
 function App() {
   const { mode, token } = useGlobalContext();
@@ -30,13 +32,15 @@ function App() {
             <Route exact path="/login" element={<Login />} />
             <Route path="/register" element={<Registration />} />
             <Route element={<RequireAuth />}>
-              <Route exact path="/" element={<Heros />} />
+              <Route exact path="/heros" element={<Heros />} />
+              <Route exact path="/" element={<HomePage />} />
               <Route path="/about" element={<Example />} />
               <Route exact path="/services" element={<Services />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/logout" element={<Logout />} />
               <Route path="/cards" element={<BlogCards />} />
               <Route path="/detail" element={<DetailPage />} />
+              <Route path="product/:id" element={<ProductDetail />} />
             </Route>
           </Routes>
         </BrowserRouter>

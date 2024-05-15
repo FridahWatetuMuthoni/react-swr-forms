@@ -1035,6 +1035,772 @@ function BlogCards() {
       </div>
 
       {/* <!--------------------------------------------------------------------> */}
+      <>
+        {/* source: https://github.com/mfg888/Responsive-Tailwind-CSS-Grid/blob/main/index.html */}
+        <div className="text-center p-10">
+          <h1 className="font-bold text-4xl mb-4">
+            Responsive Product card grid
+          </h1>
+          <h1 className="text-3xl">Tailwind CSS</h1>
+        </div>
+        {/* ✅ Grid Section - Starts Here 👇 */}
+        <section
+          id="Projects"
+          className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5"
+        >
+          {/*   ✅ Product card 1 - Starts Here 👇 */}
+          <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Product"
+                className="h-80 w-72 object-cover rounded-t-xl"
+              />
+              <div className="px-4 py-3 w-72">
+                <span className="text-gray-400 mr-3 uppercase text-xs">
+                  Brand
+                </span>
+                <p className="text-lg font-bold text-black truncate block capitalize">
+                  Product Name
+                </p>
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold text-black cursor-auto my-3">
+                    $149
+                  </p>
+                  <del>
+                    <p className="text-sm text-gray-600 cursor-auto ml-2">
+                      $199
+                    </p>
+                  </del>
+                  <div className="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      fill="currentColor"
+                      className="bi bi-bag-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/*   🛑 Product card 1 - Ends Here  */}
+          {/*   ✅ Product card 2 - Starts Here 👇 */}
+          <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Product"
+                className="h-80 w-72 object-cover rounded-t-xl"
+              />
+              <div className="px-4 py-3 w-72">
+                <span className="text-gray-400 mr-3 uppercase text-xs">
+                  Brand
+                </span>
+                <p className="text-lg font-bold text-black truncate block capitalize">
+                  Product Name
+                </p>
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold text-black cursor-auto my-3">
+                    $149
+                  </p>
+                  <del>
+                    <p className="text-sm text-gray-600 cursor-auto ml-2">
+                      $199
+                    </p>
+                  </del>
+                  <div className="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      fill="currentColor"
+                      className="bi bi-bag-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/*   🛑 Product card 2- Ends Here  */}
+          {/*   ✅ Product card 3 - Starts Here 👇 */}
+          <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Product"
+                className="h-80 w-72 object-cover rounded-t-xl"
+              />
+              <div className="px-4 py-3 w-72">
+                <span className="text-gray-400 mr-3 uppercase text-xs">
+                  Brand
+                </span>
+                <p className="text-lg font-bold text-black truncate block capitalize">
+                  Product Name
+                </p>
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold text-black cursor-auto my-3">
+                    $149
+                  </p>
+                  <del>
+                    <p className="text-sm text-gray-600 cursor-auto ml-2">
+                      $199
+                    </p>
+                  </del>
+                  <div className="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      fill="currentColor"
+                      className="bi bi-bag-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/*   🛑 Product card 3 - Ends Here  */}
+          {/*   ✅ Product card 4 - Starts Here 👇 */}
+          <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Product"
+                className="h-80 w-72 object-cover rounded-t-xl"
+              />
+              <div className="px-4 py-3 w-72">
+                <span className="text-gray-400 mr-3 uppercase text-xs">
+                  Brand
+                </span>
+                <p className="text-lg font-bold text-black truncate block capitalize">
+                  Product Name
+                </p>
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold text-black cursor-auto my-3">
+                    $149
+                  </p>
+                  <del>
+                    <p className="text-sm text-gray-600 cursor-auto ml-2">
+                      $199
+                    </p>
+                  </del>
+                  <div className="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      fill="currentColor"
+                      className="bi bi-bag-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/*   🛑 Product card 4 - Ends Here  */}
+          {/*   ✅ Product card 5 - Starts Here 👇 */}
+          <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Product"
+                className="h-80 w-72 object-cover rounded-t-xl"
+              />
+              <div className="px-4 py-3 w-72">
+                <span className="text-gray-400 mr-3 uppercase text-xs">
+                  Brand
+                </span>
+                <p className="text-lg font-bold text-black truncate block capitalize">
+                  Product Name
+                </p>
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold text-black cursor-auto my-3">
+                    $149
+                  </p>
+                  <del>
+                    <p className="text-sm text-gray-600 cursor-auto ml-2">
+                      $199
+                    </p>
+                  </del>
+                  <div className="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      fill="currentColor"
+                      className="bi bi-bag-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/*   🛑 Product card 5 - Ends Here  */}
+          {/*   ✅ Product card 6 - Starts Here 👇 */}
+          <div className="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+            <a href="#">
+              <img
+                src="https://images.unsplash.com/photo-1649261191606-cb2496e97eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="Product"
+                className="h-80 w-72 object-cover rounded-t-xl"
+              />
+              <div className="px-4 py-3 w-72">
+                <span className="text-gray-400 mr-3 uppercase text-xs">
+                  Brand
+                </span>
+                <p className="text-lg font-bold text-black truncate block capitalize">
+                  Product Name
+                </p>
+                <div className="flex items-center">
+                  <p className="text-lg font-semibold text-black cursor-auto my-3">
+                    $149
+                  </p>
+                  <del>
+                    <p className="text-sm text-gray-600 cursor-auto ml-2">
+                      $199
+                    </p>
+                  </del>
+                  <div className="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={20}
+                      height={20}
+                      fill="currentColor"
+                      className="bi bi-bag-plus"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"
+                      />
+                      <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          {/*   🛑 Product card 6 - Ends Here  */}
+        </section>
+        {/* 🛑 Grid Section - Ends Here */}
+        {/* credit */}
+        <div className="text-center py-10 px-10">
+          <h2 className="font-bold text-2xl md:text-4xl mb-4">
+            Thanks to{" "}
+            <a
+              href="https://unsplash.com/@nixcreative"
+              className="underline font-black"
+            >
+              Tyler Nix
+            </a>{" "}
+            for those AMAZING product images!
+          </h2>
+        </div>
+        {/* Support Me 🙏🥰 */}
+      </>
+
+      {/* <!--------------------------------------------------------------------> */}
+      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+          <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <img
+              src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              className="w-full mb-3"
+            />
+            <div className="p-4 pt-2">
+              <div className="mb-8">
+                <p className="text-sm text-gray-600 flex items-center">
+                  <svg
+                    className="fill-current text-gray-500 w-3 h-3 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                  </svg>
+                  Members only
+                </p>
+                <a
+                  href="#"
+                  className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block"
+                >
+                  Can coffee make you a better developer?
+                </a>
+                <p className="text-gray-700 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div className="flex items-center">
+                <a href="#">
+                  <img
+                    className="w-10 h-10 rounded-full mr-4"
+                    src="https://tailwindcss.com/img/jonathan.jpg"
+                    alt="Avatar of Jonathan Reinink"
+                  />
+                </a>
+                <div className="text-sm">
+                  <a
+                    href="#"
+                    className="text-gray-900 font-semibold leading-none hover:text-indigo-600"
+                  >
+                    Jonathan Reinink
+                  </a>
+                  <p className="text-gray-600">Aug 18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <img
+              src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              className="w-full mb-3"
+            />
+            <div className="p-4 pt-2">
+              <div className="mb-8">
+                <p className="text-sm text-gray-600 flex items-center">
+                  <svg
+                    className="fill-current text-gray-500 w-3 h-3 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                  </svg>
+                  Members only
+                </p>
+                <a
+                  href="#"
+                  className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block"
+                >
+                  Can coffee make you a better developer?
+                </a>
+                <p className="text-gray-700 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div className="flex items-center">
+                <a href="#">
+                  <img
+                    className="w-10 h-10 rounded-full mr-4"
+                    src="https://tailwindcss.com/img/jonathan.jpg"
+                    alt="Avatar of Jonathan Reinink"
+                  />
+                </a>
+                <div className="text-sm">
+                  <a
+                    href="#"
+                    className="text-gray-900 font-semibold leading-none hover:text-indigo-600"
+                  >
+                    Jonathan Reinink
+                  </a>
+                  <p className="text-gray-600">Aug 18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-r border-b border-l border-gray-400 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <img
+              src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              className="w-full mb-3"
+            />
+            <div className="p-4 pt-2">
+              <div className="mb-8">
+                <p className="text-sm text-gray-600 flex items-center">
+                  <svg
+                    className="fill-current text-gray-500 w-3 h-3 mr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"></path>
+                  </svg>
+                  Members only
+                </p>
+                <a
+                  href="#"
+                  className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block"
+                >
+                  Can coffee make you a better developer?
+                </a>
+                <p className="text-gray-700 text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                  exercitationem praesentium nihil.
+                </p>
+              </div>
+              <div className="flex items-center">
+                <a href="#">
+                  <img
+                    className="w-10 h-10 rounded-full mr-4"
+                    src="https://tailwindcss.com/img/jonathan.jpg"
+                    alt="Avatar of Jonathan Reinink"
+                  />
+                </a>
+                <div className="text-sm">
+                  <a
+                    href="#"
+                    className="text-gray-900 font-semibold leading-none hover:text-indigo-600"
+                  >
+                    Jonathan Reinink
+                  </a>
+                  <p className="text-gray-600">Aug 18</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <!--------------------------------------------------------------------> */}
+      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+          <div className="rounded overflow-hidden shadow-lg">
+            <a href="#" />
+            <div className="relative">
+              <a href="#">
+                <img
+                  className="w-full"
+                  src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="Sunset in the mountains"
+                />
+                <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+              </a>
+              <a href="#!">
+                <div className="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                  Photos
+                </div>
+              </a>
+              <a href="!#">
+                <div className="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                  <span className="font-bold">27</span>
+                  <small>March</small>
+                </div>
+              </a>
+            </div>
+            <div className="px-6 py-4">
+              <a
+                href="#"
+                className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
+              >
+                Best View in Newyork City
+              </a>
+              <p className="text-gray-500 text-sm">
+                The city that never sleeps
+              </p>
+            </div>
+            <div className="px-6 py-4 flex flex-row items-center">
+              <span
+                href="#"
+                className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center"
+              >
+                <svg
+                  height="13px"
+                  width="13px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style={{ enableBackground: "new 0 0 512 512" }}
+                  xmlSpace="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+			c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+			c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <span className="ml-1">6 mins ago</span>
+              </span>
+            </div>
+          </div>
+          <div className="rounded overflow-hidden shadow-lg">
+            <a href="#" />
+            <div className="relative">
+              <a href="#">
+                <img
+                  className="w-full"
+                  src="https://images.pexels.com/photos/1653877/pexels-photo-1653877.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="Sunset in the mountains"
+                />
+                <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+              </a>
+              <a href="#!">
+                <div className="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                  Photos
+                </div>
+              </a>
+              <a href="!#">
+                <div className="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                  <span className="font-bold">20</span>
+                  <small>March</small>
+                </div>
+              </a>
+            </div>
+            <div className="px-6 py-4">
+              <a
+                href="#"
+                className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
+              >
+                Best Pizza in Town
+              </a>
+              <p className="text-gray-500 text-sm">
+                The collection of best pizza images in Newyork city
+              </p>
+            </div>
+            <div className="px-6 py-4 flex flex-row items-center">
+              <span
+                href="#"
+                className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
+              >
+                <svg
+                  height="13px"
+                  width="13px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style={{ enableBackground: "new 0 0 512 512" }}
+                  xmlSpace="preserve"
+                >
+                  <g>
+                    <g>
+                      <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span className="ml-1">3 mins read</span>
+              </span>
+            </div>
+          </div>
+          <div className="rounded overflow-hidden shadow-lg">
+            <a href="#" />
+            <div className="relative">
+              <a href="#">
+                <img
+                  className="w-full"
+                  src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="Sunset in the mountains"
+                />
+                <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
+              </a>
+              <a href="#!">
+                <div className="absolute bottom-0 left-0 bg-indigo-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                  Photos
+                </div>
+              </a>
+              <a href="!#">
+                <div className="text-sm absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-indigo-600 transition duration-500 ease-in-out">
+                  <span className="font-bold">15</span>
+                  <small>April</small>
+                </div>
+              </a>
+            </div>
+            <div className="px-6 py-4">
+              <a
+                href="#"
+                className="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out"
+              >
+                Best Salad Images ever
+              </a>
+              <p className="text-gray-500 text-sm">
+                The collection of best salads of town in pictures
+              </p>
+            </div>
+            <div className="px-6 py-4 flex flex-row items-center">
+              <span
+                href="#"
+                className="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row justify-between items-center"
+              >
+                <svg
+                  height="13px"
+                  width="13px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 512 512"
+                  style={{ enableBackground: "new 0 0 512 512" }}
+                  xmlSpace="preserve"
+                >
+                  <g>
+                    <g>
+                      <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256 c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128 c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z"></path>
+                    </g>
+                  </g>
+                </svg>
+                <span className="ml-1">6 mins read</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <!--------------------------------------------------------------------> */}
+      <div className="h-screen w-full flex items-center justify-center  bg-gray-200 dark:bg-gray-800">
+        {/* product card */}
+        <article className="max-w-sm w-full bg-white rounded-lg shadow-lg overflow-hidden dark:bg-gray-700">
+          <div>
+            <img
+              className="object-cover h-64 w-full"
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw1fHxzbmVha2Vyc3xlbnwwfDB8fHwxNzEyMjIzNDAyfDA&ixlib=rb-4.0.3&q=80&w=1080"
+              alt="Converse sneakers"
+            />
+          </div>
+          <div className="flex flex-col gap-1 mt-4 px-4">
+            <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-50">
+              Converse Sneakers
+            </h2>
+            <span className="font-normal text-gray-600 dark:text-gray-300">
+              High Top (Lemon Yellow)
+            </span>
+            <span className="font-semibold text-gray-800 dark:text-gray-50">
+              $60
+            </span>
+          </div>
+          <div className="flex gap-4 mt-4 px-4">
+            <span className="sr-only">Colors available</span>
+            <button
+              aria-label="Yellow"
+              className="p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-yellow-500 dark:bg-yellow-400"
+            />
+            <button
+              aria-label="Red"
+              className="p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-red-500 dark:bg-red-400"
+            />
+            <button
+              aria-label="Blue"
+              className="p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-blue-500 dark:bg-blue-400"
+            />
+            <button
+              aria-label="Black"
+              className="p-1 border border-gray-200 dark:border-gray-500 rounded-full cursor-pointer bg-gray-800 dark:bg-gray-600"
+            />
+          </div>
+          <div className="mt-4 p-4 border-t border-gray-200 dark:border-gray-500">
+            <button className="w-full flex justify-between items-center font-bold cursor-pointer hover:underline text-gray-800 dark:text-gray-50">
+              <span className="text-base">Add to Cart</span>
+              <svg
+                className="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      {/* <!--------------------------------------------------------------------> */}
+      <>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          rel="stylesheet"
+        />
+        <div className="antialiased text-gray-900 ">
+          <div className="bg-gray-200 min-h-screen p-8 flex items-center justify-center">
+            <div className="bg-white rounded-lg overflow-hidden shadow-2xl xl:w-1/5 lg:w-1/4 md:w-1/3 sm:w-1/2">
+              {/*E11*/}
+              {/* <div class="h-48 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80')"></div>*/}
+              <img
+                className="h-48 w-full object-cover object-end"
+                src="https://images.unsplash.com/photo-1570797197190-8e003a00c846?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80"
+                alt="Home in Countryside"
+              />
+              <div className="p-6">
+                <div className="flex items-baseline">
+                  <span className="inline-block bg-teal-200 text-teal-800 py-1 px-4 text-xs rounded-full uppercase font-semibold tracking-wide">
+                    New
+                  </span>
+                  <div className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+                    3 beds • 2 baths
+                  </div>
+                </div>
+                <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
+                  Beautiful Home in the countryside
+                </h4>
+                <div className="mt-1">
+                  <span>$1,900.00</span>
+                  <span className="text-gray-600 text-sm">/ wk</span>
+                </div>
+                <div className="mt-2 flex items-center">
+                  <span className="text-teal-600 font-semibold">
+                    <span>
+                      <i className="fas fa-star" />
+                      <i className="fas fa-star" />
+                      <i className="fas fa-star" />
+                      <i className="fas fa-star" />
+                      <i className="far fa-star" />
+                      <span></span>
+                      <span className="ml-2 text-gray-600 text-sm">
+                        34 reviews
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+
       {/* <!--------------------------------------------------------------------> */}
     </section>
   );
