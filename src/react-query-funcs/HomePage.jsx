@@ -1,6 +1,7 @@
 import { useProducts } from "./queries";
-import { useCreateProduct } from "./mutations";
+import { useCreateProduct, useUpdateProduct } from "./mutations";
 import Product from "./Product";
+import AddTodo from "./AddTodo";
 
 function HomePage() {
   const {
@@ -12,6 +13,8 @@ function HomePage() {
     status,
     isFetching,
   } = useProducts();
+  const createProduct = useCreateProduct();
+  const updateProduct = useUpdateProduct();
 
   if (isPending) {
     return <span>loading ...</span>;
@@ -47,7 +50,7 @@ function HomePage() {
       ],
     };
 
-    const response = useCreateProduct(newProduct);
+    const response = createProduct.mutate(newProduct);
     console.log(response);
   };
 
@@ -71,6 +74,8 @@ function HomePage() {
         "https://cdn.dummyjson.com/product-images/6/4.jpg",
       ],
     };
+    const response = createProduct.mutate(updatedProduct);
+    console.log(response);
   };
 
   return (
@@ -90,6 +95,9 @@ function HomePage() {
         >
           Update Todo
         </button>
+      </section>
+      <section className="my-5">
+        <AddTodo />
       </section>
       <section
         id="Projects"

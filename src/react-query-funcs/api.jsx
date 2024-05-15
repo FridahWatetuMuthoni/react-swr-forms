@@ -11,12 +11,13 @@ const getProduct = async (id) => {
 };
 
 const createProduct = async (product) => {
-  const response = await axiosInstance.post(`add/`, product);
+  const response = await axiosInstance.post(`add`, product);
+  console.log(response);
   return response.data;
 };
 
-const updateProduct = async (id) => {
-  const response = await axiosInstance.put(`${id}`);
+const updateProduct = async (data) => {
+  const response = await axiosInstance.put(`${data.id}`, data);
   return response.data;
 };
 
@@ -25,4 +26,30 @@ const deleteProduct = async (id) => {
   return response.data;
 };
 
-export { getProducts, getProduct, createProduct, updateProduct, deleteProduct };
+const addTodo = async (data) => {
+  console.log(data);
+};
+
+const getProjects = async (page = 1) => {
+  const skip = page === 1 ? 0 : (page - 1) * 10;
+  const response = await axiosInstance.get(`?skip=${skip}&limit=10`);
+  return response.data;
+};
+const getMore = async ({ pageParam }) => {
+  let items = pageParam * 10;
+  console.log(pageParam);
+  console.log(items);
+  const response = await axiosInstance.get(`?limit=${items}`);
+  return response.data;
+};
+
+export {
+  getProducts,
+  getProduct,
+  createProduct,
+  getMore,
+  updateProduct,
+  deleteProduct,
+  addTodo,
+  getProjects,
+};

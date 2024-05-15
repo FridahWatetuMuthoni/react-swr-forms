@@ -14,6 +14,8 @@ import BlogCards from "./components/BlogCards";
 import DetailPage from "./components/DetailPage";
 import HomePage from "./react-query-funcs/HomePage";
 import ProductDetail from "./react-query-funcs/ProductDetail";
+import Projects from "./react-query-funcs/Projects";
+import InfiniteLoading from "./react-query-funcs/InfiniteLoading";
 
 function App() {
   const { mode, token } = useGlobalContext();
@@ -40,7 +42,9 @@ function App() {
               <Route path="/logout" element={<Logout />} />
               <Route path="/cards" element={<BlogCards />} />
               <Route path="/detail" element={<DetailPage />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="product/:id" element={<ProductDetail />} />
+              <Route path="loading" element={<InfiniteLoading />} />
             </Route>
           </Routes>
         </BrowserRouter>
