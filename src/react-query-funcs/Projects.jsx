@@ -23,9 +23,7 @@ function Projects() {
           <Product product={product} key={product.title} />
         ))}
       </section>
-      <section className="w-full">
-        <Pagination page={page} total={data.total} setPage={setPage} />
-      </section>
+      <Pagination page={page} total={data.total} setPage={setPage} />
     </>
   );
 }
